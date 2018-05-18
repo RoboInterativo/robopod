@@ -1,0 +1,4 @@
+*.pyc
+robopod/__pycache__/
+pods/__pycache__
+files/*
