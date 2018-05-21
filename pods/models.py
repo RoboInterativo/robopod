@@ -19,4 +19,4 @@ class PodcastEpisode (models.Model):
     publicated=models.DateField()
     pod_description=models.CharField(max_length=1000)
     podcast_file=models.FileField(fs)
-     podcast = models.ForeignKey(Podcast,on_delete=models.CASCADE)
+    podcast = models.ForeignKey(Podcast,on_delete=models.CASCADE)
