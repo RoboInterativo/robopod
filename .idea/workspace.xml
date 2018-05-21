@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84c1b5d-ef87-414d-ac41-ec83fd394716" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pods/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pods/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pods/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="330">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -58,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pods/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
@@ -79,9 +79,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pods/models.py" />
-        <option value="$PROJECT_DIR$/pods/views.py" />
         <option value="$PROJECT_DIR$/robopod/urls.py" />
         <option value="$PROJECT_DIR$/pods/urls.py" />
+        <option value="$PROJECT_DIR$/pods/views.py" />
       </list>
     </option>
   </component>
@@ -265,13 +265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pods/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/robopod/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -289,6 +282,13 @@
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
