@@ -124,5 +124,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT ='/var/www/robopod/static'
-MEDIA_URL = '/mp3/'
-MEDIA_ROOT ='/var/www/robopod/mp3'
+MEDIA_URL = '/media/'
+MEDIA_ROOT ='/var/www/robopod/media'
