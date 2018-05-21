@@ -12,7 +12,7 @@ class Author (models.Model):
 class Podcast(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     podcast_title = models.CharField(max_length=1000)
-    podcast_image = models.ImageFile(fs2)
+    podcast_image = models.ImageField(fs2)
 
 class PodcastEpisode (models.Model):
     episode_title=models.CharField(max_length=200)

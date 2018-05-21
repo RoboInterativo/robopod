@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelavent variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/chief8/PycharmProjects/robopod/venv"
+VIRTUAL_ENV="/home/chief8/PycharmProjects/robo/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
