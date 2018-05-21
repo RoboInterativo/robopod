@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84c1b5d-ef87-414d-ac41-ec83fd394716" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.4/site-packages/Django-2.0.5.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.4/site-packages/Django-2.0.5.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.4/site-packages/pytz-2018.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.4/site-packages/pytz-2018.4.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robopod/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/robopod/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,13 +18,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pods/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="176">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2882">
+              <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pods/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/robopod/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pods/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,6 +81,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pods/models.py" />
+        <option value="$PROJECT_DIR$/pods/views.py" />
+        <option value="$PROJECT_DIR$/robopod/urls.py" />
+        <option value="$PROJECT_DIR$/pods/urls.py" />
       </list>
     </option>
   </component>
@@ -67,6 +113,16 @@
           <expand>
             <path>
               <item name="robopod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robopod" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robopod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robopod" type="462c0819:PsiDirectoryNode" />
+              <item name="pods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robopod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robopod" type="462c0819:PsiDirectoryNode" />
               <item name="robopod" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -146,11 +202,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32985073" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3283582" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -195,10 +252,44 @@
     <entry file="file://$PROJECT_DIR$/robo/urls.py" />
     <entry file="file://$PROJECT_DIR$/pods/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2882">
+          <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pods/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robopod/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pods/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
