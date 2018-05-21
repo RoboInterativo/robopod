@@ -1,8 +1,7 @@
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 # Create your models here.
-fs = FileSystemStorage(location='/var/www/robopod/media/mp3')
-fs2 = FileSystemStorage(location='/var/www/robopod/media/pics')
+fs = FileSystemStorage(location='/var/www/robopod/media')
 class Author (models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=1000)
@@ -12,7 +11,7 @@ class Author (models.Model):
 class Podcast(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     podcast_title = models.CharField(max_length=1000)
-    podcast_image = models.ImageField(fs2)
+    podcast_image = models.ImageField(fs)
 
 class PodcastEpisode (models.Model):
     episode_title=models.CharField(max_length=200)
