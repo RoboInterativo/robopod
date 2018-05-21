@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.files.storage import FileSystemStorage
 # Create your models here.
-fs = FileSystemStorage(location='/var/www/robopod/')
+fs = FileSystemStorage(location='/var/www/robopod/mp3')
 
 class Author (models.Model):
     title = models.CharField(max_length=200)

@@ -25,7 +25,7 @@ SECRET_KEY = '7!g7(4vn2+1(q_&-3y^ia-o7p8anwrem3o$1tgsb7scvy%t7hi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['robointerativo.ru']
+ALLOWED_HOSTS = ['pod.geekslore.ru']
 
 
 # Application definition
@@ -123,3 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT ='/var/www/robopod/static'
+MEDIA_URL = '/mp3/'
+MEDIA_ROOT ='/var/www/robopod/mp3'
