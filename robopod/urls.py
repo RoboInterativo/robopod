@@ -1,11 +1,10 @@
 from django.conf.urls import url, include
 from django.urls import path, re_path
-from . import views
-from counterdb.views import counter
+from django.contrib import admin
 
 urlpatterns = [
-    path("", views.index, name='index'),
-
+    path('admin/', admin.site.urls),
+    path ('', include('pods.urls')),
 
 ]
 

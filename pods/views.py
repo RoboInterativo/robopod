@@ -1,4 +1,11 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django.template.loader import get_template
+from django.template import Context
+import  json
+import datetime
+from django.shortcuts import get_object_or_404
+import sys
 
 # Create your views here.
 def index(request):
@@ -6,13 +13,11 @@ def index(request):
     # now = datetime.datetime.now()
     # html = t.render(context=None, request=None)
     # p=Task.objects.filter(thash=gt['hash'])
-    p = Task.objects
+    #p = Task.objects
     #a = p.values_list()
     #p2 = Task.objects.all()
     # html=json.dumps(a['job'])
-    t = get_template('templates/base.html')
+    t = get_template('base.html')
     now = datetime.datetime.now()
     html = t.render(context={}, request=None)
-
-
-return HttpResponse(html)
+    return HttpResponse(html)
