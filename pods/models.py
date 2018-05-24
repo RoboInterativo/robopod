@@ -2,20 +2,23 @@ from django.db import models
 from django.core.files.storage import FileSystemStorage
 # Create your models here.
 fs = FileSystemStorage(location='/var/www/robopod/media')
-class Author (models.Model):
-    title = models.CharField(max_length=200)
-    description = models.CharField(max_length=1000)
 
 
+class Author (django.db.models.Model):
+    title = django.db.models.CharField(max_length=200)
+    description = django.db.models.CharField(max_length=1000)
 
-class Podcast(models.Model):
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
-    podcast_title = models.CharField(max_length=1000)
-    podcast_image = models.ImageField(fs)
 
-class PodcastEpisode (models.Model):
-    episode_title=models.CharField(max_length=200)
-    publicated=models.DateField()
-    pod_description=models.CharField(max_length=1000)
-    podcast_file=models.FileField(fs)
-    podcast = models.ForeignKey(Podcast,on_delete=models.CASCADE)
+class Podcast(django.db.models.Model):
+    author = django.db.models.ForeignKey(Author, on_delete=django.db.models.CASCADE)
+    podcast_title = django.db.models.CharField(max_length=1000)
+    podcast_description = django.db.models.CharField(max_length=1000)
+    podcast_image = django.db.models.ImageField(fs)
+
+
+class PodcastEpisode(django.db.models.Model):
+    episode_title = django.db.models.CharField(max_length=200)
+    publicated = django.db.models.DateField()
+    pod_description = django.db.models.CharField(max_length=1000)
+    podcast_file = django.db.models.FileField(fs)
+    podcast = django.db.models.ForeignKey(Podcast, on_delete=django.db.models.CASCADE)
