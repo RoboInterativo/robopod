@@ -115,7 +115,8 @@
         <p>Лучшее со дна игровой индустрии в исполнении знатных водолазов.</p>
         <p  class="font-weight-bold">Выпуски</p>
         <ul class="container-fluid">
-            {% for pod in podcast_list %}
+            {% for p in podcast_list %}
+
             <li class="media shadow p-2 m-3">
                 <img style="width: 174px" class="mr-3 img-thumbnail shadow-sm " src="media/91954-3.jpg"
                      alt="Generic placeholder image">
@@ -127,7 +128,7 @@
                         </audio>
                     </div>
                     <div class="d-table-row">
-                        <h5 class="mt-0 mb-1">{% pod.episode_title %}</h5>
+                        <h5 class="mt-0 mb-1">{% p.episode_title %}</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
                         Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
