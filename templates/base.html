@@ -111,19 +111,19 @@
         </div>
     </div>
     <div class="p-2 mb-2 w-75  bd-highlight">
-        <h3>Игровой Батискаф</h3>
-        <p>Лучшее со дна игровой индустрии в исполнении знатных водолазов.</p>
+        <h3>{{ pod_list[0].podcast_title }}</h3>
+        <p>{{  pod_list[0].podcast_description }} </p>
         <p  class="font-weight-bold">Выпуски</p>
         <ul class="container-fluid">
 
              {%  for p in pod_list %}
             <li class="media shadow p-2 m-3">
-                <img style="width: 174px" class="mr-3 img-thumbnail shadow-sm " src="media/91954-3.jpg"
+                <img style="width: 174px" class="mr-3 img-thumbnail shadow-sm " src="media/{{ podcast.podcast_image.name }}"
                      alt="Generic placeholder image">
 
                 <div class="media-body">
                     <div class="d-table-row">
-                        <audio class="container-fluid" controls>
+                        <audio class="co" controls>
                             <source src="media/{{ p.podcast_file.name }}" type="audio/mp3">
                         </audio>
                     </div>
