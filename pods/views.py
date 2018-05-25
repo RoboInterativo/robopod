@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template.loader import get_template
+from pods.models import *
+
 from django.template import Context
 import  json
 import datetime
@@ -17,7 +19,13 @@ def index(request):
 #a = p.values_list()
 #p2 = Task.objects.all()
 #html=json.dumps(a['job'])
-    t = get_template('base.html')
+
 #now = datetime.datetime.now()
-    html = t.render(context={}, request=None)
-    return HttpResponse(html)
+    podcast_list = PodcastEpisode.objects.order_by('publicated')
+    template = loader.get_template('base.html')
+    context = {
+        'podcast_list': latest_question_list,
+    }
+    return HttpResponse(template.render(context, request))
+
+   )
