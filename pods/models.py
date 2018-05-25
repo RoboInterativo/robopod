@@ -6,7 +6,7 @@ fs = FileSystemStorage(location='/var/www/robopod/media')
 
 class Author (models.Model):
     title = models.CharField(max_length=200)
-    description = models.CharField(max_length=1000)
+    description = models.CharField(max_length=1000, default='')
 
     def __str__(self):
         return '{} '.format(self.title)
@@ -15,7 +15,7 @@ class Author (models.Model):
 class Podcast(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     podcast_title = models.CharField(max_length=1000)
-    podcast_description = models.CharField(max_length=1000)
+    podcast_description = models.CharField(max_length=1000, default='')
     podcast_image = models.ImageField(fs)
 
     def __str__(self):
@@ -25,7 +25,7 @@ class Podcast(models.Model):
 class PodcastEpisode(models.Model):
     episode_title = models.CharField(max_length=200)
     publicated = models.DateField()
-    pod_description = models.CharField(max_length=1000)
+    pod_description = models.CharField(max_length=1000, default='')
     podcast_file = models.FileField(fs)
     podcast = models.ForeignKey(Podcast, on_delete=models.CASCADE)
 
