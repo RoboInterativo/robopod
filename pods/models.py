@@ -13,7 +13,7 @@ class Author (models.Model):
 
 
 class Podcast(models.Model):
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    author = models.ForeignKey(Author,related_name='Author', on_delete=models.CASCADE)
     podcast_title = models.CharField(max_length=1000)
     podcast_description = models.CharField(max_length=1000, default='')
     podcast_image = models.ImageField(fs)
@@ -27,7 +27,7 @@ class PodcastEpisode(models.Model):
     publicated = models.DateField()
     pod_description = models.CharField(max_length=1000, default='')
     podcast_file = models.FileField(fs)
-    podcast = models.ForeignKey(Podcast, on_delete=models.CASCADE)
+    podcast = models.ForeignKey(Podcast,related_name='Podcast', on_delete=models.CASCADE)
 
     def __str__(self):
         return '{} -{}'.format(self.episode_title,self.pod_description)
