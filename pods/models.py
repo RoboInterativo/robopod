@@ -23,6 +23,7 @@ class Podcast(models.Model):
 
 
 class PodcastEpisode(models.Model):
+    episode_number=models.IntegerField(default=0)
     episode_title = models.CharField(max_length=200)
     publicated = models.DateField()
     pod_description = models.CharField(max_length=1000, default='')
