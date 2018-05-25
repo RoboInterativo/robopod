@@ -23,8 +23,9 @@ def index(request):
 
 #now = datetime.datetime.now()
     pod_list = PodcastEpisode.objects.order_by('publicated').reverse()
+    pod=pod_list[0]
     template = loader.get_template('base.html')
-    context = {'pod_list': pod_list}
+    context = {'pod_list': pod_list,'pod':pod}
     return HttpResponse(template.render(context))
 
 
