@@ -25,7 +25,7 @@ def index(request):
     podcast_list = PodcastEpisode.objects.order_by('publicated')[0]
     template = loader.get_template('base.html')
     context = {
-        'podcast_list': podcast_list,
+        'podcasts': podcast_list,
     }
     return HttpResponse(template.render(context, request))
 
