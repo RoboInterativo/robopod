@@ -22,10 +22,10 @@ def index(request):
 #html=json.dumps(a['job'])
 
 #now = datetime.datetime.now()
-    podcast_list = PodcastEpisode.objects.order_by('publicated')
+    pod_list = PodcastEpisode.objects.order_by('publicated')
     template = loader.get_template('base.html')
     context = {
-        'podcasts': podcast_list,
+        'podcasts': pod_list,
     }
     return HttpResponse(template.render(context, request))
 
