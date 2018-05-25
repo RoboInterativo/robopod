@@ -124,16 +124,12 @@
                 <div class="media-body">
                     <div class="d-table-row">
                         <audio class="container-fluid" controls>
-                            <source src="media/podster_batiskaf_0001_igromir_2015.mp3" type="audio/mp3">
+                            <source src="media/{{ p.podcast_file.name }}" type="audio/mp3">
                         </audio>
                     </div>
                     <div class="d-table-row">
                         <h5 class="mt-0 mb-1">{{ p.episode_title }}</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-                        Cras
-                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                        nisi
-                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                         {{ p.pod_description }}
                     </div>
                     {% endfor %}
 
