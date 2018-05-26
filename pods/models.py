@@ -16,8 +16,8 @@ class Podcast(models.Model):
     author = models.ForeignKey(Author,related_name='Author', on_delete=models.CASCADE)
     podcast_title = models.CharField(max_length=1000)
     podcast_description = models.CharField(max_length=1000, default='')
-    podcast_image = models.ImageField(fs,null=True)
-    default_ep_image = models.ImageField(fs)
+    podcast_image = models.ImageField(fs, null=True)
+    default_ep_image = models.ImageField(fs, null=True)
 
     def __str__(self):
         return '{} -{}'.format(self.podcast_title,self.podcast_description)
