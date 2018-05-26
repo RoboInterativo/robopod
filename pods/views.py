@@ -24,7 +24,7 @@ def index(request):
 #now = datetime.datetime.now()
     pod_list = PodcastEpisode.objects.order_by('episode_number').reverse()
     pod=pod_list[0].podcast
-    pod_count = podcast_list.count()
+    pod_count = pod_list.count()
     template = loader.get_template('base.html')
     context = {'pod_list': pod_list,'podd':pod,'pod_count':pod_count}
     return HttpResponse(template.render(context))
