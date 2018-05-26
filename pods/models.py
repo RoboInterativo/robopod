@@ -17,6 +17,7 @@ class Podcast(models.Model):
     podcast_title = models.CharField(max_length=1000)
     podcast_description = models.CharField(max_length=1000, default='')
     podcast_image = models.ImageField(fs)
+    default_ep_image = models.ImageField(fs)
 
     def __str__(self):
         return '{} -{}'.format(self.podcast_title,self.podcast_description)
@@ -31,4 +32,4 @@ class PodcastEpisode(models.Model):
     podcast = models.ForeignKey(Podcast,related_name='Podcast', on_delete=models.CASCADE)
 
     def __str__(self):
-        return '{} -{}'.format(self.episode_title,self.pod_description)
+        return '{}: {}-{} {}'.format(self.podcast.author.title, self.episode_number, self.episode_title, self.pod_description)
