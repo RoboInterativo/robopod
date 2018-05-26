@@ -16,7 +16,7 @@ class Podcast(models.Model):
     author = models.ForeignKey(Author,related_name='Author', on_delete=models.CASCADE)
     podcast_title = models.CharField(max_length=1000)
     podcast_description = models.CharField(max_length=1000, default='')
-    podcast_image = models.ImageField(fs)
+    podcast_image = models.ImageField(fs,null=True)
     default_ep_image = models.ImageField(fs)
 
     def __str__(self):
@@ -24,10 +24,11 @@ class Podcast(models.Model):
 
 
 class PodcastEpisode(models.Model):
-    episode_number=models.IntegerField(default=0)
+    episode_number = models.IntegerField(default=0)
     episode_title = models.CharField(max_length=200)
     publicated = models.DateField()
     pod_description = models.CharField(max_length=1000, default='')
+    podcast_image = models.ImageField(fs, null=True)
     podcast_file = models.FileField(fs)
     podcast = models.ForeignKey(Podcast,related_name='Podcast', on_delete=models.CASCADE)
 
