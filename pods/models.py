@@ -30,7 +30,7 @@ class PodcastEpisode(models.Model):
     pod_description = models.CharField(max_length=1000, default='')
     podcast_image = models.ImageField(fs, null=True)
     podcast_file = models.FileField(fs)
-    podcast = models.ForeignKey(Podcast,related_name='Podcast', on_delete=models.CASCADE)
+    podcast = models.ForeignKey(Podcast, related_name='Podcast', on_delete=models.CASCADE)
 
     def __str__(self):
         return '{}: {}-{} {}'.format(self.podcast.author.title, self.episode_number, self.episode_title, self.pod_description)
