@@ -13,8 +13,10 @@ import sys
 import site
 path2 = '/home/robopod'
 path3 = '/home/robopod/robopod'
+path4 = '/home/robopod/venv/lib/python3.5/site-packages'
 sys.path.append(path2)
 sys.path.append(path3)
+sys.path.append(path4)
 
 
 from django.core.wsgi import get_wsgi_application
